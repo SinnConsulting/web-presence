@@ -1,59 +1,641 @@
-<!doctype html>
-<html lang="de">
-
-<head>
-	<title>Consulting, Engineering & Support - Marcel Sinn Consulting</title>
-	<meta charset="utf-8" />
-	<meta name="description" content="IT Consulting, Engineering & Support - Marcel Sinn Consulting" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="style.css" />
-	<link rel="icon" type="image/png" href="images/Originalx600_1x1.png" />
-	<script>var l=localStorage.getItem('lang');if(l)document.documentElement.lang=l;</script>
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcel Sinn Consulting — Cloud Consulting &amp; AI Support</title>
+<meta name="description" content="Cloud Consulting &amp; AI Support — Marcel Sinn Consulting, München">
+<link rel="icon" type="image/png" href="images/logo.webp">
+<link rel="stylesheet" href="style.css">
+<script>var l=localStorage.getItem('sc_lang')||(navigator.language&&navigator.language.startsWith('en')?'en':'de');document.documentElement.lang=l;</script>
 </head>
 
-<body>
-	<div class="grain"></div>
-	<button class="lang-toggle" aria-label="Toggle language">
-		<span class="de">EN</span><span class="en">DE</span>
-	</button>
-	<main>
-		<div class="hero">
-			<div class="logo-ring">
-				<div class="logo-reveal">
-					<img src="images/Originalx600_1x1.png" alt="Marcel Sinn Consulting Logo" class="logo" />
-				</div>
-				<svg class="ring-svg" viewBox="0 0 200 200">
-					<circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="0.5" />
-				</svg>
-				<div class="logo-glow"></div>
-			</div>
+<body data-palette="teal" data-density="normal">
 
-			<h1 class="name">Marcel Sinn</h1>
-			<div class="divider"></div>
-			<p class="tagline">Consulting, Engineering & Support</p>
+  <div class="ambient"></div>
+  <div class="grain"></div>
 
-			<nav class="social">
-				<a href="#" class="mail-link" aria-label="E-Mail" data-u="marcel" data-d="sinn.consulting">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-				</a>
-				<a href="https://www.linkedin.com/in/marcel-sinn-398a3a11a" target="_blank" rel="noopener" aria-label="LinkedIn">
-					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-				</a>
-				<a href="https://www.xing.com/profile/Marcel_Sinn" target="_blank" rel="noopener" aria-label="Xing">
-					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L3.169 13.8c-.09.189-.089.383 0 .535.09.141.254.22.463.22h3.454c.528 0 .774-.352.939-.66l2.406-4.326c-.016-.025-2.384-4.138-2.384-4.138-.166-.302-.414-.66-.929-.66H3.648z"/></svg>
-				</a>
-				<a href="https://github.com/argonqq" target="_blank" rel="noopener" aria-label="GitHub">
-					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-				</a>
-			</nav>
-		</div>
-	</main>
-	<footer>
-		<a href="impressum.html"><span class="de">Impressum</span><span class="en">Legal Notice</span></a>
-		<span class="dot"></span>
-		<a href="datenschutz.html"><span class="de">Datenschutz</span><span class="en">Privacy Policy</span></a>
-	</footer>
-	<script src="lang.js"></script>
-</body>
+  <!-- TOP BAR -->
+  <header class="topbar" id="topbar">
+    <a href="#top" class="brandmark">
+      <img src="images/logo.webp" alt="">
+      <span>Marcel Sinn <span class="sub">Consulting</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about" data-section="about"><span class="num">01</span><span><span class="de">Über</span><span class="en">About</span></span></a>
+      <a href="#services" data-section="services"><span class="num">02</span><span><span class="de">Leistungen</span><span class="en">Services</span></span></a>
+      <a href="#approach" data-section="approach"><span class="num">03</span><span><span class="de">Ansatz</span><span class="en">Approach</span></span></a>
+      <a href="#stack" data-section="stack"><span class="num">04</span><span>Stack</span></a>
+      <a href="#contact" data-section="contact"><span class="num">05</span><span><span class="de">Kontakt</span><span class="en">Contact</span></span></a>
+    </nav>
+    <button class="chip" id="langBtn" aria-label="Toggle language">
+      <span class="de">EN</span><span class="en">DE</span>
+    </button>
+  </header>
 
-</html>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="status-strip">
+        <span class="dot"></span>
+        <span><span class="de">Verfügbar</span><span class="en">Available</span></span>
+        <span class="sep">·</span>
+        <span>München, DE</span>
+        <span class="sep">·</span>
+        <span>Remote / DACH</span>
+      </div>
+
+      <div class="logo-ring">
+        <div class="logo-reveal">
+          <img src="images/logo.webp" alt="Marcel Sinn Consulting" class="logo">
+        </div>
+        <svg class="ring-svg outer" viewBox="0 0 200 200"><circle cx="100" cy="100" r="99.5"></circle></svg>
+        <svg class="ring-svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="96"></circle></svg>
+        <svg class="ring-ticks" viewBox="0 0 200 200" aria-hidden="true">
+          <g>
+            <line x1="100" y1="2" x2="100" y2="8"></line>
+            <line x1="100" y1="192" x2="100" y2="198"></line>
+            <line x1="2" y1="100" x2="8" y2="100"></line>
+            <line x1="192" y1="100" x2="198" y2="100"></line>
+            <line x1="30" y1="30" x2="35" y2="35"></line>
+            <line x1="170" y1="30" x2="165" y2="35"></line>
+            <line x1="30" y1="170" x2="35" y2="165"></line>
+            <line x1="170" y1="170" x2="165" y2="165"></line>
+          </g>
+        </svg>
+        <div class="logo-glow"></div>
+      </div>
+
+      <h1 class="name">Marcel <em>Sinn</em></h1>
+      <div class="divider"></div>
+      <p class="tagline">Cloud Consulting <span class="amp">&amp;</span> AI Support</p>
+
+      <p class="lede">
+        <span class="de">Unabhängige Beratung an der Schnittstelle von <strong>Cloud-Infrastruktur</strong> und <strong>angewandter KI</strong>. Architektur, Umsetzung und laufender Support — mit der nötigen Ruhe und technischen Tiefe.</span>
+        <span class="en">Independent consulting at the intersection of <strong>cloud infrastructure</strong> and <strong>applied AI</strong>. Architecture, implementation and ongoing support — with the calm and technical depth the work deserves.</span>
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="cta">
+          <span class="de">Projekt besprechen</span><span class="en">Start a conversation</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+        </a>
+        <a href="#services" class="cta ghost">
+          <span class="de">Leistungen ansehen</span><span class="en">See services</span>
+        </a>
+      </div>
+
+      <nav class="social" aria-label="Elsewhere">
+        <a href="#" class="mail-link" aria-label="E-Mail" data-u="marcel" data-d="sinn.consulting">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/marcel-sinn-398a3a11a" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+        </a>
+        <a href="https://github.com/argonqq" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+        </a>
+      </nav>
+    </div>
+
+    <div class="scroll-cue">
+      <span class="de">Scrollen</span><span class="en">Scroll</span>
+      <span class="bar"></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="block" id="about">
+    <div class="section-head">
+      <div>
+        <div class="section-idx reveal">01 / <span class="de">Über</span><span class="en">About</span></div>
+        <h2 class="h2 reveal delay-1" style="margin-top:1.5rem">
+          <span class="de">Technik mit <em>Kontext</em>,<br>Menschen mit <em>Rückgrat</em>.</span>
+          <span class="en">Technology with <em>context</em>,<br>people with <em>backbone</em>.</span>
+        </h2>
+      </div>
+      <div>
+        <span class="eyebrow reveal">Marcel Sinn · München</span>
+        <p class="prose reveal delay-1" style="margin-top:1.25rem">
+          <span class="de"><strong>Seit über einem Jahrzehnt</strong> arbeite ich an Systemen, die über Jahre laufen müssen — und an den Teams, die sie tragen. Der Fokus hat sich mit der Zeit verschoben: heute verbringe ich die meisten Tage zwischen Cloud-Architektur und angewandter KI.</span>
+          <span class="en"><strong>For over a decade</strong> I've worked on systems that have to run for years — and on the teams behind them. The focus has shifted over time: today I spend most days between cloud architecture and applied AI.</span>
+        </p>
+        <p class="prose reveal delay-2">
+          <span class="de">Arbeiten beginnt meist vor der ersten Zeile Code: beim Verstehen des Geschäfts, der Menschen und der Zwänge. Erst dann Technik, Umsetzung, Betrieb — ohne Mode, ohne Lärm.</span>
+          <span class="en">Work usually starts before the first line of code — understanding the business, the people, the constraints. Then the technology, the build, the operations — no fashion, no noise.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="profile-card reveal">
+        <div class="portrait portrait--illus">
+          <span class="pill">MS · 01</span>
+          <div class="portrait-bg" aria-hidden="true">
+            <svg viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="pg-bg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#0f1a18"></stop>
+                  <stop offset="1" stop-color="#16231f"></stop>
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="200" height="250" fill="url(#pg-bg)"></rect>
+              <g stroke="rgba(236,239,233,.05)" stroke-width="0.5">
+                <path d="M0 50H200M0 100H200M0 150H200M0 200H200"></path>
+                <path d="M50 0V250M100 0V250M150 0V250"></path>
+              </g>
+              <circle cx="100" cy="110" r="72" fill="rgba(42,157,143,.10)"></circle>
+              <circle cx="100" cy="110" r="50" fill="rgba(42,157,143,.12)"></circle>
+              <g stroke="rgba(236,239,233,.25)" stroke-width="0.6" fill="none">
+                <path d="M8 8 H 18 M 8 8 V 18"></path>
+                <path d="M192 8 H 182 M 192 8 V 18"></path>
+                <path d="M8 242 H 18 M 8 242 V 232"></path>
+                <path d="M192 242 H 182 M 192 242 V 232"></path>
+              </g>
+            </svg>
+          </div>
+          <img class="portrait-photo" src="images/portrait.webp" alt="Marcel Sinn">
+          <span class="portrait-caption">
+            <span class="de">Portrait · München</span>
+            <span class="en">Portrait · Munich</span>
+          </span>
+          <span class="portrait-ratio">4:5</span>
+        </div>
+        <dl class="profile-meta">
+          <dt><span class="de">Rolle</span><span class="en">Role</span></dt>
+          <dd><span class="de">Cloud &amp; KI-Berater</span><span class="en">Cloud &amp; AI consultant</span></dd>
+          <dt><span class="de">Sitz</span><span class="en">Based</span></dt>
+          <dd>München, DE</dd>
+          <dt><span class="de">Reichweite</span><span class="en">Reach</span></dt>
+          <dd>DACH · EU</dd>
+          <dt><span class="de">Modus</span><span class="en">Mode</span></dt>
+          <dd><span class="de">Remote / Vor Ort</span><span class="en">Remote / on-site</span></dd>
+          <dt><span class="de">Sprachen</span><span class="en">Languages</span></dt>
+          <dd>DE · EN</dd>
+        </dl>
+      </div>
+
+      <div class="reveal delay-2">
+        <blockquote class="quote">
+          <span class="de">Gute Technik ist selten das laute Ding im Raum. Sie läuft einfach — und lässt Menschen ihre Arbeit tun.</span>
+          <span class="en">Good technology is rarely the loudest thing in the room. It just runs — and lets people do their work.</span>
+        </blockquote>
+        <p class="prose" style="margin-top:2rem">
+          <span class="de">Kunden kommen meist mit einer konkreten Frage: <em>Was kostet uns diese Architektur in zwei Jahren?</em> · <em>Ist dieser KI-Use-Case mehr als ein Demo?</em> · <em>Wer schaut sich das nachts an, wenn es brennt?</em></span>
+          <span class="en">Clients usually arrive with a concrete question: <em>What will this architecture cost us in two years?</em> · <em>Is this AI use case more than a demo?</em> · <em>Who looks at this at 3am when it breaks?</em></span>
+        </p>
+        <p class="prose" style="margin-top:1rem">
+          <span class="de">Die Antwort entsteht im Gespräch — und bleibt dann im Betrieb.</span>
+          <span class="en">The answer starts in conversation — and stays through operations.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-idx reveal">02 / <span class="de">Leistungen</span><span class="en">Services</span></div>
+          <h2 class="h2 reveal delay-1" style="margin-top:1.5rem">
+            <span class="de">Zwei Disziplinen, <em>eine Haltung</em>.</span>
+            <span class="en">Two disciplines, <em>one posture</em>.</span>
+          </h2>
+        </div>
+        <div>
+          <span class="eyebrow reveal"><span class="de">Schwerpunkte</span><span class="en">Focus areas</span></span>
+          <p class="prose reveal delay-1" style="margin-top:1.25rem">
+            <span class="de">Cloud-Infrastruktur und angewandte KI gehören heute zusammen. Die gleiche Sorgfalt, die eine Architektur überleben lässt, braucht auch ein Sprachmodell im Produktionseinsatz.</span>
+            <span class="en">Cloud infrastructure and applied AI belong together now. The same care that keeps an architecture alive is what a language model needs to survive production.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <article class="service reveal">
+          <div class="service-head">
+            <span class="num">01 / Cloud Consulting</span>
+            <span class="tag">AWS · Azure · GCP</span>
+          </div>
+          <h3>
+            <span class="de">Architektur, die <em>altert</em> ohne zu zerfallen.</span>
+            <span class="en">Architecture that <em>ages</em> without falling apart.</span>
+          </h3>
+          <p>
+            <span class="de">Von der ersten Zielarchitektur bis zur Migration und dem nüchternen Kosten-Review. Unabhängig vom Hyperscaler, entlang realer Auflagen — Datenschutz, Latenz, Personal, Budget.</span>
+            <span class="en">From target architecture to migration to a sober cost review. Independent of the hyperscaler, aligned with real constraints — data protection, latency, people, budget.</span>
+          </p>
+
+          <div class="svc-diagram" aria-hidden="true">
+            <span class="node on"><span class="de">Ist</span><span class="en">Current</span></span>
+            <span class="arr">→</span>
+            <span class="node on"><span class="de">Zielbild</span><span class="en">Target</span></span>
+            <span class="arr">→</span>
+            <span class="node on"><span class="de">Migration</span><span class="en">Migration</span></span>
+            <span class="arr">→</span>
+            <span class="node on"><span class="de">Betrieb</span><span class="en">Operate</span></span>
+          </div>
+
+          <ul class="service-list">
+            <li><span class="de">Zielarchitektur</span><span class="en">Target architecture</span></li>
+            <li>Landing zones</li>
+            <li><span class="de">Cloud-Migration</span><span class="en">Cloud migration</span></li>
+            <li>IaC · Terraform</li>
+            <li><span class="de">Kosten-Review</span><span class="en">Cost review</span></li>
+            <li><span class="de">DSGVO &amp; Sovereignty</span><span class="en">GDPR &amp; sovereignty</span></li>
+          </ul>
+        </article>
+
+        <article class="service reveal delay-1">
+          <div class="service-head">
+            <span class="num">02 / AI Support</span>
+            <span class="tag">LLM · RAG · Agents</span>
+          </div>
+          <h3>
+            <span class="de">KI, die den <em>Dienstag</em> übersteht.</span>
+            <span class="en">AI that survives a <em>Tuesday</em>.</span>
+          </h3>
+          <p>
+            <span class="de">Für Teams, die über die Demo hinaus sind. Use-Case-Auswahl, Integration in bestehende Systeme, Evaluation, Guardrails — und jemand, der später wirklich drauf schaut.</span>
+            <span class="en">For teams past the demo stage. Use-case selection, integration into existing systems, evaluation, guardrails — and someone who actually looks at it later.</span>
+          </p>
+
+          <div class="svc-diagram" aria-hidden="true">
+            <span class="node on">prompt</span>
+            <span class="arr">→</span>
+            <span class="node on">retrieve</span>
+            <span class="arr">→</span>
+            <span class="node on">evaluate</span>
+            <span class="arr">→</span>
+            <span class="node on">ship</span>
+          </div>
+
+          <ul class="service-list">
+            <li><span class="de">Use-Case-Audit</span><span class="en">Use-case audit</span></li>
+            <li>RAG &amp; retrieval</li>
+            <li><span class="de">Prompt-Systeme</span><span class="en">Prompt systems</span></li>
+            <li>Eval &amp; guardrails</li>
+            <li><span class="de">Integration</span><span class="en">Integration</span></li>
+            <li><span class="de">Laufender Support</span><span class="en">Ongoing support</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="block" id="approach">
+    <div class="section-head">
+      <div>
+        <div class="section-idx reveal">03 / <span class="de">Ansatz</span><span class="en">Approach</span></div>
+        <h2 class="h2 reveal delay-1" style="margin-top:1.5rem">
+          <span class="de">Vier Phasen, <em>ohne Drama</em>.</span>
+          <span class="en">Four phases, <em>no drama</em>.</span>
+        </h2>
+      </div>
+      <div>
+        <span class="eyebrow reveal"><span class="de">Wie ich arbeite</span><span class="en">How I work</span></span>
+        <p class="prose reveal delay-1" style="margin-top:1.25rem">
+          <span class="de">Kein Rahmenwerk, keine dreistelligen Folienzahlen. Stattdessen vier verlässliche Bewegungen, die sich in jedem Projekt wiederholen — nur in unterschiedlicher Dauer.</span>
+          <span class="en">No framework-of-the-week, no three-digit slide counts. Just four reliable motions that repeat across every project — just with different durations.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="approach">
+      <div class="step reveal">
+        <span class="ph">i / listen</span>
+        <h4><span class="de">Zu<em>hören</em></span><span class="en">Lis<em>ten</em></span></h4>
+        <p>
+          <span class="de">Geschäft, Team, Technik, Historie. Die Frage hinter der Anfrage — schriftlich festhalten.</span>
+          <span class="en">Business, team, technology, history. The question behind the question — written down.</span>
+        </p>
+        <span class="meta"><span class="dur">1–2 <span class="de">Wochen</span><span class="en">weeks</span></span> · artefact · brief</span>
+      </div>
+      <div class="step reveal delay-1">
+        <span class="ph">ii / frame</span>
+        <h4><span class="de"><em>Rahmen</em></span><span class="en"><em>Frame</em></span></h4>
+        <p>
+          <span class="de">Ein Zielbild, das Handeln erlaubt — schriftlich, nüchtern, verhandelbar. Diagramme statt Folklore.</span>
+          <span class="en">A target picture you can act on — written, sober, negotiable. Diagrams, not folklore.</span>
+        </p>
+        <span class="meta"><span class="dur">2–4 <span class="de">Wochen</span><span class="en">weeks</span></span> · artefact · architecture</span>
+      </div>
+      <div class="step reveal delay-2">
+        <span class="ph">iii / execute</span>
+        <h4><span class="de"><em>Umsetzen</em></span><span class="en"><em>Execute</em></span></h4>
+        <p>
+          <span class="de">In kleinen, ehrlichen Schritten. Nichts beschönigt, nichts verschleppt. Paarweise mit Ihrem Team.</span>
+          <span class="en">In small, honest steps. Nothing dressed up, nothing stalled. Pairwise with your team.</span>
+        </p>
+        <span class="meta"><span class="dur">6–16 <span class="de">Wochen</span><span class="en">weeks</span></span> · artefact · system</span>
+      </div>
+      <div class="step reveal delay-3">
+        <span class="ph">iv / accompany</span>
+        <h4><span class="de"><em>Begleiten</em></span><span class="en"><em>Accompany</em></span></h4>
+        <p>
+          <span class="de">Der Betrieb ist Teil des Auftrags, nicht sein Ende. Bereitschaft, Weiterentwicklung, Wissenstransfer.</span>
+          <span class="en">Operations are part of the work, not the end of it. On-call, evolution, knowledge transfer.</span>
+        </p>
+        <span class="meta"><span class="dur"><span class="de">laufend</span><span class="en">ongoing</span></span> · artefact · runbook</span>
+      </div>
+    </div>
+
+    <div style="margin-top:5rem">
+      <span class="eyebrow reveal"><span class="de">Prinzipien</span><span class="en">Principles</span></span>
+      <h3 class="h2 reveal delay-1" style="margin-top:1rem;max-width:26ch;font-size:clamp(1.6rem,3vw,2.2rem)">
+        <span class="de">Drei <em>Regeln</em>, denen ich folge.</span>
+        <span class="en">Three <em>rules</em> I follow.</span>
+      </h3>
+      <div class="principles" style="margin-top:3rem">
+        <div class="principle reveal">
+          <span class="n">01</span>
+          <h4><span class="de"><em>Langsam</em> denken, schnell liefern.</span><span class="en">Think <em>slowly</em>, ship quickly.</span></h4>
+          <p>
+            <span class="de">Die Zeit, die vor der Umsetzung in Klarheit investiert wird, zahlt sich zehnfach zurück.</span>
+            <span class="en">Time invested in clarity before execution pays back tenfold.</span>
+          </p>
+        </div>
+        <div class="principle reveal delay-1">
+          <span class="n">02</span>
+          <h4><span class="de">Mit <em>Ihrem Team</em>, nicht statt.</span><span class="en">With <em>your team</em>, not instead.</span></h4>
+          <p>
+            <span class="de">Am Ende des Auftrags kennt jemand in Ihrem Haus das System — sonst war es kein Auftrag.</span>
+            <span class="en">By the end of the engagement, someone in your house knows the system — otherwise it wasn't an engagement.</span>
+          </p>
+        </div>
+        <div class="principle reveal delay-2">
+          <span class="n">03</span>
+          <h4><span class="de">Boring tech, <em>wo möglich</em>.</span><span class="en">Boring tech, <em>where possible</em>.</span></h4>
+          <p>
+            <span class="de">Neues nur, wo es klare Vorteile bringt. Der Rest darf verlässlich und unaufregend sein.</span>
+            <span class="en">Novelty only where there's a clear win. The rest is allowed to be reliable and unexciting.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-idx reveal">04 / Stack</div>
+          <h2 class="h2 reveal delay-1" style="margin-top:1.5rem">
+            <span class="de">Werkzeuge, nicht <em>Glaubensrichtungen</em>.</span>
+            <span class="en">Tools, not <em>religions</em>.</span>
+          </h2>
+        </div>
+        <div>
+          <span class="eyebrow reveal"><span class="de">Häufige Bestandteile</span><span class="en">Frequent ingredients</span></span>
+          <p class="prose reveal delay-1" style="margin-top:1.25rem">
+            <span class="de">Jedes Projekt wählt seinen eigenen Satz. Dies ist, was mir in den letzten Jahren am häufigsten begegnet ist — und worin ich tief genug bin, um ehrlich zu beraten.</span>
+            <span class="en">Every project picks its own set. This is what I've encountered most in recent years — and what I'm deep enough in to advise on honestly.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="stack-map reveal">
+        <div class="stack-row">
+          <div class="stack-label"><span class="n">01</span><span>Cloud</span></div>
+          <div class="stack-items">
+            <span class="tok">AWS</span><span class="tok">Azure</span><span class="tok">GCP</span><span class="tok">Hetzner</span><span class="tok">Cloudflare</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-label"><span class="n">02</span><span>Infra</span></div>
+          <div class="stack-items">
+            <span class="tok">Terraform</span><span class="tok">Pulumi</span><span class="tok">Kubernetes</span><span class="tok">Nomad</span><span class="tok">Ansible</span><span class="tok">Docker</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-label"><span class="n">03</span><span>AI / ML</span></div>
+          <div class="stack-items">
+            <span class="tok">Claude</span><span class="tok">Bedrock</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-label"><span class="n">04</span><span>Data</span></div>
+          <div class="stack-items">
+            <span class="tok">MySQL</span><span class="tok">Postgres</span><span class="tok">Kafka</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-label"><span class="n">05</span><span>Observe</span></div>
+          <div class="stack-items">
+            <span class="tok">Grafana</span><span class="tok">Prometheus</span><span class="tok">OpenTelemetry</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-label"><span class="n">06</span><span>Languages</span></div>
+          <div class="stack-items">
+            <span class="tok">Python</span><span class="tok">Bash</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="block" id="contact">
+    <div class="section-head">
+      <div>
+        <div class="section-idx reveal">05 / <span class="de">Kontakt</span><span class="en">Contact</span></div>
+        <h2 class="h2 reveal delay-1" style="margin-top:1.5rem">
+          <span class="de">Reden wir über das <em>Problem dahinter</em>.</span>
+          <span class="en">Let's talk about the <em>real problem</em>.</span>
+        </h2>
+      </div>
+      <div>
+        <span class="eyebrow reveal"><span class="de">Wie wir starten</span><span class="en">How we start</span></span>
+        <p class="prose reveal delay-1" style="margin-top:1.25rem">
+          <span class="de">Eine kurze Nachricht genügt — gern mit ein paar Stichworten zu Kontext und Zeithorizont. Innerhalb eines Werktags kommt eine ehrliche Antwort: ob, wie und ab wann ich helfen kann.</span>
+          <span class="en">A short note is enough — ideally a few lines on context and timing. Within one business day you'll get an honest reply: whether, how, and when I can help.</span>
+        </p>
+        <a href="#" class="mail-link cta reveal delay-2" data-u="marcel" data-d="sinn.consulting" style="margin-top:2rem">
+          <span class="de">E-Mail schreiben</span><span class="en">Write an email</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="links">
+      <a href="legal-notice.html"><span class="de">Impressum</span><span class="en">Legal Notice</span></a>
+      <span class="dot"></span>
+      <a href="privacy.html"><span class="de">Datenschutz</span><span class="en">Privacy Policy</span></a>
+    </div>
+    <span class="mono">© <span id="year"></span> · Marcel Sinn Consulting · München</span>
+  </footer>
+
+  <!-- TWEAKS -->
+  <div id="tweaks" aria-hidden="true">
+    <header>
+      <span class="t"><em>Tweaks</em></span>
+      <button id="tweaksClose" aria-label="Close">×</button>
+    </header>
+    <div class="body">
+      <div class="grp">
+        <span class="lbl">Palette</span>
+        <div class="opts">
+          <button class="swatch on" data-k="palette" data-v="teal"><span class="dot" style="background:#2a9d8f"></span><span class="nm">Teal</span></button>
+          <button class="swatch" data-k="palette" data-v="sage"><span class="dot" style="background:#7ea693"></span><span class="nm">Sage</span></button>
+        </div>
+        <div class="opts">
+          <button class="swatch" data-k="palette" data-v="amber"><span class="dot" style="background:#c8914a"></span><span class="nm">Amber</span></button>
+          <button class="swatch" data-k="palette" data-v="indigo"><span class="dot" style="background:#7e8cc9"></span><span class="nm">Indigo</span></button>
+        </div>
+      </div>
+      <div class="grp">
+        <span class="lbl">Density</span>
+        <div class="opts">
+          <button class="opt" data-k="density" data-v="compact">Compact</button>
+          <button class="opt on" data-k="density" data-v="normal">Normal</button>
+          <button class="opt" data-k="density" data-v="airy">Airy</button>
+        </div>
+      </div>
+      <div class="grp">
+        <span class="lbl">Language</span>
+        <div class="opts">
+          <button class="opt" data-k="lang" data-v="de">Deutsch</button>
+          <button class="opt" data-k="lang" data-v="en">English</button>
+        </div>
+      </div>
+      <div class="grp">
+        <span class="lbl">Detail</span>
+        <label class="sw"><input type="checkbox" id="grainTog" checked=""><span>Film grain</span></label>
+      </div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Generate grain texture via canvas
+  (function(){
+    var c = document.createElement('canvas');
+    c.width = 256; c.height = 256;
+    var ctx = c.getContext('2d');
+    var img = ctx.createImageData(256, 256);
+    for(var i = 0; i < img.data.length; i += 4){
+      var v = Math.random() * 255 | 0;
+      img.data[i] = img.data[i+1] = img.data[i+2] = v;
+      img.data[i+3] = 255;
+    }
+    ctx.putImageData(img, 0, 0);
+    var grain = document.querySelector('.grain');
+    if(grain) grain.style.backgroundImage = 'url(' + c.toDataURL() + ')';
+  })();
+
+  // Language
+  var lang = localStorage.getItem('sc_lang') || (navigator.language && navigator.language.startsWith('en') ? 'en' : 'de');
+  document.documentElement.lang = lang;
+  function setLang(v){
+    lang = v;
+    document.documentElement.lang = v;
+    localStorage.setItem('sc_lang', v);
+    document.querySelectorAll('[data-k="lang"]').forEach(function(b){
+      b.classList.toggle('on', b.dataset.v === v);
+    });
+  }
+  document.getElementById('langBtn').addEventListener('click', function(){
+    setLang(lang === 'de' ? 'en' : 'de');
+  });
+
+  // Anti-scrape
+  document.querySelectorAll('.mail-link').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      window.location.href = 'mai'+'lto:'+el.dataset.u+'@'+el.dataset.d;
+    });
+  });
+  document.querySelectorAll('.mail-text').forEach(function(el){
+    var a = el.dataset.u+'@'+el.dataset.d;
+    el.href = 'mai'+'lto:'+a;
+    el.textContent = a;
+  });
+  document.querySelectorAll('.addr').forEach(function(el){
+    el.innerHTML = el.dataset.a + '<br>' + el.dataset.c;
+  });
+  document.querySelectorAll('.phone').forEach(function(el){
+    var num = el.dataset.p + el.dataset.s;
+    el.innerHTML = '<a href="te'+'l:'+num+'" style="color:inherit;text-decoration:none">'+num+'</a>';
+  });
+
+  // Scroll
+  var topbar = document.getElementById('topbar');
+  var sections = ['about','services','approach','stack','contact'].map(function(id){ return document.getElementById(id); });
+  var navLinks = document.querySelectorAll('.nav a[data-section]');
+  function onScroll(){
+    topbar.classList.toggle('scrolled', window.scrollY > 40);
+    var y = window.scrollY + window.innerHeight*0.35;
+    var active = null;
+    sections.forEach(function(s){ if(s && s.offsetTop <= y) active = s.id; });
+    navLinks.forEach(function(a){ a.classList.toggle('active', a.dataset.section === active); });
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Reveal
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // Tweaks
+  var defaults = {
+    "palette": "teal",
+    "density": "normal",
+    "grain": true
+  };
+  var state = Object.assign({}, defaults);
+  function apply(){
+    document.body.dataset.palette = state.palette;
+    document.body.dataset.density = state.density;
+    document.body.classList.toggle('no-grain', !state.grain);
+    document.querySelectorAll('[data-k]').forEach(function(b){
+      var k = b.dataset.k, v = b.dataset.v;
+      if(k === 'lang') b.classList.toggle('on', v === lang);
+      else b.classList.toggle('on', state[k] === v);
+    });
+    document.getElementById('grainTog').checked = !!state.grain;
+  }
+  function persist(p){ try{ window.parent.postMessage({type:'__edit_mode_set_keys',edits:p},'*'); }catch(e){} }
+  document.querySelectorAll('[data-k]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var k = b.dataset.k, v = b.dataset.v;
+      if(k === 'lang'){ setLang(v); return; }
+      state[k] = v; apply();
+      var p = {}; p[k] = v; persist(p);
+    });
+  });
+  document.getElementById('grainTog').addEventListener('change', function(e){
+    state.grain = !!e.target.checked; apply(); persist({grain:state.grain});
+  });
+  apply();
+
+  // Edit-mode host protocol
+  var panel = document.getElementById('tweaks');
+  document.getElementById('tweaksClose').addEventListener('click', function(){
+    panel.classList.remove('open'); panel.setAttribute('aria-hidden','true');
+  });
+  window.addEventListener('message', function(ev){
+    var d = ev.data || {};
+    if(d.type === '__activate_edit_mode'){ panel.classList.add('open'); panel.setAttribute('aria-hidden','false'); }
+    else if(d.type === '__deactivate_edit_mode'){ panel.classList.remove('open'); panel.setAttribute('aria-hidden','true'); }
+  });
+  try{ window.parent.postMessage({type:'__edit_mode_available'},'*'); }catch(e){}
+})();
+</script>
+
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "12fd92c1de4e4deb9b2d8f11032fddbf"}'></script>
+</body></html>

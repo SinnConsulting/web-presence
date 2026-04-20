@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impressum — Marcel Sinn Consulting</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="images/logo.webp">
+<link rel="stylesheet" href="style.css">
+<script>var l=localStorage.getItem('sc_lang')||(navigator.language&&navigator.language.startsWith('en')?'en':'de');document.documentElement.lang=l;</script>
+</head>
+
+<body>
+
+  <div class="ambient"></div>
+  <div class="grain"></div>
+
+  <header class="topbar" id="topbar">
+    <a href="index.html" class="brandmark" style="opacity:1;pointer-events:auto">
+      <img src="images/logo.webp" alt="">
+      <span>Marcel Sinn <span class="sub">Consulting</span></span>
+    </a>
+    <button class="chip" id="langBtn" aria-label="Toggle language">
+      <span class="de">EN</span><span class="en">DE</span>
+    </button>
+  </header>
+
+  <main class="legal-content">
+    <h1>
+      <span class="de">Impress<em>um</em></span>
+      <span class="en">Legal <em>Notice</em></span>
+    </h1>
+
+    <h2>
+      <span class="de">Angaben gem. § 5 TMG</span>
+      <span class="en">Information pursuant to § 5 TMG</span>
+    </h2>
+    <p>
+      Marcel Sinn<br>
+      Marcel Sinn Consulting<br>
+      <span class="addr" data-a="Griegstr.15b" data-c="80807 München"></span>
+    </p>
+
+    <h2>
+      <span class="de">Kontakt</span>
+      <span class="en">Contact</span>
+    </h2>
+    <p>
+      E-Mail: <a href="#" class="mail-text" data-u="marcel" data-d="sinn.consulting"></a><br>
+      <span class="de">Telefon</span><span class="en">Phone</span>: <span class="phone" data-p="01567" data-s="9792345"></span>
+    </p>
+
+    <h2>
+      <span class="de">Verantwortlich für den Inhalt gem. § 18 Abs. 2 MStV</span>
+      <span class="en">Responsible for content pursuant to § 18 (2) MStV</span>
+    </h2>
+    <p>
+      Marcel Sinn<br>
+      <span class="addr" data-a="Griegstr.15b" data-c="80807 München"></span>
+    </p>
+
+    <h2>
+      <span class="de">Haftung für Inhalte</span>
+      <span class="en">Liability for Content</span>
+    </h2>
+    <p class="de">
+      Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
+      Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.
+      Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen
+      Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+      Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
+      überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+    </p>
+    <p class="en">
+      The contents of these pages were created with the utmost care. However, we cannot guarantee the accuracy,
+      completeness, or timeliness of the content. As a service provider, we are responsible for our own content
+      on these pages in accordance with § 7 (1) TMG. According to §§ 8 to 10 TMG, however, we are
+      not obligated to monitor transmitted or stored third-party information or to investigate circumstances that
+      indicate illegal activity.
+    </p>
+
+    <h2>
+      <span class="de">Haftung für Links</span>
+      <span class="en">Liability for Links</span>
+    </h2>
+    <p class="de">
+      Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
+      Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die
+      Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+      Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
+      überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+    </p>
+    <p class="en">
+      Our website contains links to external third-party websites over whose content we have no influence.
+      Therefore, we cannot accept any liability for this third-party content. The respective provider or operator
+      of the linked pages is always responsible for their content. The linked pages were checked for possible legal
+      violations at the time of linking. Illegal content was not recognizable at the time of linking.
+    </p>
+
+    <h2>
+      <span class="de">Urheberrecht</span>
+      <span class="en">Copyright</span>
+    </h2>
+    <p class="de">
+      Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
+      Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb
+      der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+    </p>
+    <p class="en">
+      The content and works created by the site operators on these pages are subject to German copyright law.
+      Duplication, processing, distribution, and any kind of exploitation beyond the limits of copyright law
+      require the written consent of the respective author or creator.
+    </p>
+  </main>
+
+  <footer class="foot">
+    <div class="links">
+      <a href="legal-notice.html"><span class="de">Impressum</span><span class="en">Legal Notice</span></a>
+      <span class="dot"></span>
+      <a href="privacy.html"><span class="de">Datenschutz</span><span class="en">Privacy Policy</span></a>
+    </div>
+    <span class="mono">&copy; <span id="year"></span> &middot; Marcel Sinn Consulting &middot; München</span>
+  </footer>
+
+<script>
+(function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Grain
+  (function(){
+    var c = document.createElement('canvas');
+    c.width = 256; c.height = 256;
+    var ctx = c.getContext('2d');
+    var img = ctx.createImageData(256, 256);
+    for(var i = 0; i < img.data.length; i += 4){
+      var v = Math.random() * 255 | 0;
+      img.data[i] = img.data[i+1] = img.data[i+2] = v;
+      img.data[i+3] = 255;
+    }
+    ctx.putImageData(img, 0, 0);
+    var grain = document.querySelector('.grain');
+    if(grain) grain.style.backgroundImage = 'url(' + c.toDataURL() + ')';
+  })();
+
+  // Language
+  var lang = localStorage.getItem('sc_lang') || (navigator.language && navigator.language.startsWith('en') ? 'en' : 'de');
+  document.documentElement.lang = lang;
+  function setLang(v){
+    lang = v;
+    document.documentElement.lang = v;
+    localStorage.setItem('sc_lang', v);
+  }
+  document.getElementById('langBtn').addEventListener('click', function(){
+    setLang(lang === 'de' ? 'en' : 'de');
+  });
+
+  // Anti-scrape
+  document.querySelectorAll('.mail-text').forEach(function(el){
+    var a = el.dataset.u+'@'+el.dataset.d;
+    el.href = 'mai'+'lto:'+a;
+    el.textContent = a;
+  });
+  document.querySelectorAll('.addr').forEach(function(el){
+    el.innerHTML = el.dataset.a + '<br>' + el.dataset.c;
+  });
+  document.querySelectorAll('.phone').forEach(function(el){
+    var num = el.dataset.p + el.dataset.s;
+    el.innerHTML = '<a href="te'+'l:'+num+'" style="color:inherit;text-decoration:none">'+num+'</a>';
+  });
+
+  // Topbar scroll
+  var topbar = document.getElementById('topbar');
+  window.addEventListener('scroll', function(){
+    topbar.classList.toggle('scrolled', window.scrollY > 40);
+  }, {passive:true});
+})();
+</script>
+
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "12fd92c1de4e4deb9b2d8f11032fddbf"}'></script>
+</body></html>
